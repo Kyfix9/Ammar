@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>My Resume - Ammar Rafiq Bin Abdul Razak</title>
+	<style>
+		/* General styling */
+		body {
+			background-color: #FBD594;
+			font-family: Arial, sans-serif;
+			color: #333;
+			margin: 0;
+			padding: 0;
+		}
+		.container {
+			width: 90%;
+			max-width: 800px;
+			margin: auto;
+			padding: 20px;
+			text-align: center;
+		}
+
+		/* Header styling */
+		header {
+			padding: 20px;
+			background-color: #FFA917;
+			color: white;
+		}
+		header h1 {
+			margin: 0;
+			font-size: 2.5em;
+		}
+		header p {
+			font-style: italic;
+		}
+
+		/* Navigation bar */
+		.navbar {
+			display: flex;
+			justify-content: center;
+			background-color: #333;
+			padding: 10px;
+		}
+		.navbar a {
+			color: #FFA917;
+			padding: 10px 15px;
+			text-decoration: none;
+			font-weight: bold;
+			transition: color 0.3s;
+		}
+		.navbar a:hover {
+			color: white;
+		}
+
+		/* Section styling */
+		section {
+			margin: 20px 0;
+		}
+		section h2 {
+			font-size: 1.8em;
+			color: #333;
+			border-bottom: 2px solid #FFA917;
+			display: inline-block;
+			padding-bottom: 5px;
+		}
+		section p {
+			font-size: 1.1em;
+			line-height: 1.6;
+		}
+
+		/* Image styling */
+		.profile-pic {
+			border-radius: 50%;
+			width: 200px;
+			height: 200px;
+			margin-top: 20px;
+			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+		}
+
+		/* Button styling */
+		.button {
+			display: inline-block;
+			padding: 10px 20px;
+			margin: 10px;
+			background-color: #FFA917;
+			color: white;
+			font-weight: bold;
+			border-radius: 5px;
+			text-decoration: none;
+			transition: background-color 0.3s;
+		}
+		.button:hover {
+			background-color: #333;
+		}
+
+		/* Contact form styling */
+		.contact-form {
+			background-color: #FFF7E3;
+			padding: 20px;
+			border-radius: 10px;
+			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+		}
+		.contact-form input, .contact-form textarea {
+			width: 100%;
+			padding: 10px;
+			margin: 10px 0;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+		}
+		.contact-form button {
+			background-color: #FFA917;
+			color: white;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+			font-weight: bold;
+		}
+		.contact-form button:hover {
+			background-color: #333;
+		}
+
+		/* Footer */
+		footer {
+			background-color: #333;
+			color: white;
+			padding: 20px;
+			margin-top: 20px;
+			font-size: 0.9em;
+		}
+	</style>
+</head>
+<body>
+
+	<!-- Header -->
+	<header>
+		<h1>Ammar Rafiq Bin Abdul Razak</h1>
+		<p>Welcome to My Professional Resume</p>
+	</header>
+
+	<!-- Navbar -->
+	<div class="navbar">
+		<a href="#about">About Me</a>
+		<a href="#skills">Skills</a>
+		<a href="#experience">Experience</a>
+		<a href="#contact">Contact</a>
+	</div>
+
+	<!-- Main Content -->
+	<div class="container">
+
+		<!-- About Section -->
+		<section id="about">
+			<h2>About Me</h2>
+			<img src="intro pic.jpg" alt="Ammar's Profile Picture" class="profile-pic">
+			<p>Hello! I'm Ammar Rafiq, a dedicated and passionate individual excited to share my journey and skills with you. Feel free to explore and get to know me better.</p>
+		</section>
+
+		<!-- Skills Section -->
+		<section id="skills">
+			<h2>Skills</h2>
+			<p><b>Languages:</b> HTML, CSS, JavaScript, Python</p>
+			<p><b>Frameworks:</b> Bootstrap, React, Node.js</p>
+			<p><b>Tools:</b> Git, VSCode, Adobe Photoshop</p>
+		</section>
+
+		<!-- Experience Section -->
+		<section id="experience">
+			<h2>Experience</h2>
+			<p><b>Frontend Developer Intern</b> - XYZ Company (2023)</p>
+			<p>Developed responsive web applications and collaborated with designers to enhance user experiences.</p>
+			<p><b>Freelance Web Developer</b> - Self-employed (2022 - Present)</p>
+			<p>Worked on various client projects, providing tailored web solutions.</p>
+		</section>
+
+		<!-- Contact Section -->
+		<section id="contact">
+			<h2>Contact Me</h2>
+			<div class="contact-form">
+				<form action="https://example.com/submit" method="post">
+					<input type="text" name="name" placeholder="Your Name" required>
+					<input type="email" name="email" placeholder="Your Email" required>
+					<textarea name="message" placeholder="Your Message" rows="4" required></textarea>
+					<button type="submit">Send Message</button>
+				</form>
+			</div>
+		</section>
+
+	</div>
+
+	<!-- Footer -->
+	<footer>
+		<p>This website is made by Ammar Rafiq &copy; 2024</p>
+	</footer>
+
+</body>
+</html>
