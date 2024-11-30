@@ -1,0 +1,321 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9; /* Lighter background for a cleaner look */
+    padding: 20px;
+}
+
+/* Header Styling */
+header {
+    background-color: #1e2a47; /* Dark blue */
+    color: white;
+    padding: 20px 10px;
+    text-align: center;
+    border-bottom: 4px solid #005b96; /* Accent border */
+}
+
+header h1 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 16px;
+    color: #b0bec5; /* Light gray text */
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #37474f; /* Dark gray */
+    padding: 15px 10px;
+    margin-top: -5px; /* Seamless with header */
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #005b96; /* Accent color for hover */
+}
+
+nav ul li a.active {
+    text-decoration: underline;
+    color: #00bcd4; /* Highlight active link */
+}
+
+/* About Me Section */
+.about-me-box {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    margin: 30px 0;
+    padding: 20px;
+    background-color: #fff;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.profile-image-about {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid #1e2a47;
+    object-fit: cover;
+}
+
+.about-me-text {
+    max-width: 700px;
+    font-size: 18px;
+    line-height: 1.8;
+    color: #555; /* Slightly darker for better readability */
+    text-align: justify;
+}
+
+/* Biodata Section */
+.biodata-section {
+    padding: 20px;
+    background-color: #fff;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.biodata-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.biodata-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.biodata-table th,
+.biodata-table td {
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.biodata-table th {
+    background-color: #005b96;
+    color: white;
+}
+
+.biodata-table td {
+    background-color: #f9f9f9;
+}
+
+.biodata-table caption {
+    font-size: 1.8em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Moving Text Box */
+.moving-text-box {
+    padding: 15px;
+    background-color: #fff;
+    border: 2px solid #333;
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 30px;
+    animation: moveText 5s ease-in-out infinite;
+}
+
+@keyframes moveText {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(20px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* Gallery Section */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Ensures two images per row */
+    gap: 20px; /* Adds more space between images */
+    margin: 30px auto; /* Centers the gallery on the page */
+    max-width: 80%; /* Limits gallery width for a cleaner layout */
+}
+
+/* Image Styling */
+.gallery img {
+    width: 100%; /* Fully fills the grid cell */
+    height: 400px; /* Maintains aspect ratio dynamically */
+    border-radius: 12px; /* Slightly larger rounded corners for a modern look */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Slightly deeper shadow */
+    transition: transform 0.4s ease, box-shadow 0.4s ease; /* Smooth hover effect */
+}
+
+/* Hover Effects */
+.gallery img:hover {
+    transform: scale(1.08); /* Gentle zoom effect */
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.25); /* Enhanced hover shadow */
+}
+
+
+/* Footer */
+footer {
+    background-color: #37474f;
+    color: #b0bec5;
+    text-align: center;
+    padding: 20px;
+    border-top: 4px solid #005b96;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+footer .contact-links a {
+    color: #00bcd4;
+    text-decoration: none;
+    font-size: 14px;
+    margin: 0 10px;
+}
+
+footer .contact-links a:hover {
+    text-decoration: underline;
+}
+
+/* Improved Table Design */
+table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    border: 2px solid #005b96;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #005b96;
+    color: white;
+}
+
+td {
+    background-color: #f9f9f9;
+}
+
+tr:nth-child(even) {
+    background-color: #f1f1f1;
+}
+
+caption {
+    font-size: 1.6em;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Style for the photo gallery */
+.photo-gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Creates 4 columns */
+    gap: 10px; /* Adds spacing between images */
+}
+
+.photo-gallery img {
+    width: 100%; /* Ensures images fit within the grid cells */
+    height: 200px; /* Maintains aspect ratio */
+    object-fit: cover; /* Ensures consistent cropping */
+}
+
+/* Updated Clock Design */
+#clock {
+    font-family: 'Arial', sans-serif;
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+    color: #333;
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 8px;
+    width: 150px;
+    margin: 20px auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Add an animated "pulse" effect to the clock */
+#clock span {
+    display: inline-block;
+    animation: pulse 1.5s infinite ease-in-out;
+}
+
+/* Animation effect */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.1);
+        opacity: 0.8;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.image-section {
+    text-align: center; /* This centers the image horizontally */
+    margin: 30px 0; /* Adds some space above and below the image */
+}
+
+.main-image {
+    width: 30%; /* Adjust this percentage to make the image smaller or larger */
+    height: 500px; /* Keeps the aspect ratio intact */
+    border-radius: 8px; /* Optional: rounded corners */
+    display: block; /* Ensures the image is a block element */
+    margin: 0 auto; /* Centers the image horizontally */
+}
+
+
